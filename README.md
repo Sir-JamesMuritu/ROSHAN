@@ -1131,6 +1131,10 @@ The application prioritizes conversion, professional aesthetics, and seamless us
 * Form submissions stored in Google Sheets
 * Admin can access responses via Google Sheets
 
+**Google Form Link**
+* Here is the google form link;
+https://docs.google.com/forms/d/e/1FAIpQLScL9H21wGacWUa-0-Ot_AdEtoBRW-g1fa69863679sp3gi7wQ/viewform
+
 **User Experience:**
 
 * Seamless embedded experience
