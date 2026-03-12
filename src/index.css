@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Royal Data Blue #1D4ED8 → 224 76% 48% */
+    /* Deep Navy #0B1F3A → 214 70% 14% */
+    /* Electric Blue #3B82F6 → 217 91% 60% */
+    /* Vibrant Orange #F97316 → 25 95% 53% */
+    /* Golden Amber #FBBF24 → 45 97% 56% */
+    /* Soft Gray #F8FAFC → 210 40% 98% */
+    /* Border Gray #E2E8F0 → 214 32% 91% */
+
+    --background: 210 40% 98%;
+    --foreground: 214 70% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 70% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 70% 14%;
+
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 95% 53%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 224 76% 48%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar – Deep Navy */
+    --sidebar-background: 214 70% 14%;
+    --sidebar-foreground: 210 40% 94%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 60% 22%;
+    --sidebar-accent-foreground: 210 40% 94%;
+    --sidebar-border: 214 50% 20%;
+    --sidebar-ring: 217 91% 60%;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, #0B1F3A 0%, #1D4ED8 50%, #3B82F6 100%);
+    --cta-gradient: linear-gradient(90deg, #F97316 0%, #FBBF24 100%);
+    --accent-glow: 217 91% 65%;
+    --golden: 45 97% 56%;
+    --surface-elevated: 0 0% 100%;
+    --surface-glass: 214 70% 14% / 0.04;
+    --shadow-card: 0 4px 24px -4px hsl(224 76% 48% / 0.08);
+    --shadow-card-hover: 0 12px 40px -8px hsl(224 76% 48% / 0.18);
+    --ticker-bg: 224 76% 48%;
+    --intake-bg: 25 95% 53%;
+    --intake-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 214 70% 7%;
+    --foreground: 210 40% 94%;
+    --card: 214 60% 10%;
+    --card-foreground: 210 40% 94%;
+    --popover: 214 60% 10%;
+    --popover-foreground: 210 40% 94%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 25 95% 53%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 214 40% 15%;
+    --muted-foreground: 215 20% 55%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 20% 94%;
+    --border: 214 40% 18%;
+    --input: 214 40% 18%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 214 70% 5%;
+    --sidebar-foreground: 210 40% 94%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 50% 12%;
+    --sidebar-accent-foreground: 210 40% 94%;
+    --sidebar-border: 214 50% 12%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+  .hero-bg {
+    background: var(--hero-gradient);
+  }
+  .cta-gradient {
+    background: var(--cta-gradient);
+  }
+  .glass-surface {
+    background: hsl(var(--surface-glass));
+    backdrop-filter: blur(12px);
+  }
+}
+
+/* Ticker animation */
+@keyframes ticker-scroll {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-ticker {
+  animation: ticker-scroll 20s linear infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
