@@ -10,7 +10,7 @@ import { toast } from "sonner";
 import { motion } from "framer-motion";
 
 import geometricBg from "@/assets/geometric-background.webp";
-import fullLogoImage from "@/assets/Full_Roshan_Training_Institute_Logo.png";
+import fullLogoImage from "@/assets/Roshan_Training_Institute_Logo.png";
 
 const Signup = () => {
   const navigate = useNavigate();

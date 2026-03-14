@@ -5,13 +5,15 @@ import { Button } from "@/components/ui/button";
 import { BarChart3, Brain, Code2, TrendingUp } from "lucide-react";
 
 import slide1 from "@/assets/slides/boy-learning.jpeg";
-import slide2 from "@/assets/slides/girl-learning.jpg";
-import slide3 from "@/assets/slides/girl-learning3.jpg";
-import slide4 from "@/assets/slides/girl-learning4.jpg";
-import slide5 from "@/assets/slides/male-leaning.jpg";
-import slide6 from "@/assets/slides/two-learning.jpg";
+import slide2 from "@/assets/slides/male-leaning.jpg";
+import slide3 from "@/assets/slides/two-learning.jpg";
+import slide4 from "@/assets/slides/Analysis.png";
+// import slide5 from "@/assets/slides/classroom.jpeg";
+import slide6 from "@/assets/slides/geralt-big.jpeg";
+import slide7 from "@/assets/slides/graduate.jpeg";
+import slide8 from "@/assets/slides/training.jpeg";
 
-const slideImages = [slide1, slide2, slide3, slide4, slide5, slide6];
+const slideImages = [slide1, slide2, slide3, slide4, slide6, slide7, slide8];
 
 const animatedPhrases = [
   { text: "AI & Data Skills", icon: BarChart3 },
@@ -34,7 +36,7 @@ const HeroSection = () => {
   useEffect(() => {
     const imageInterval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % slideImages.length);
-    }, 4000);
+    }, 8000);
     return () => clearInterval(imageInterval);
   }, []);
 
