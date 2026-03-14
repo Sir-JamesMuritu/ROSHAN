@@ -36,7 +36,7 @@ const HeroSection = () => {
   useEffect(() => {
     const imageInterval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % slideImages.length);
-    }, 8000);
+    }, 6000);
     return () => clearInterval(imageInterval);
   }, []);
 
