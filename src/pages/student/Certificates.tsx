@@ -86,7 +86,7 @@ const Certificates = () => {
     doc.setFont("helvetica", "normal");
     doc.setFontSize(9);
     doc.setTextColor(148, 163, 184);
-    doc.text("RDTI — Excellence in Data & AI Training", w / 2, 42, { align: "center" });
+    doc.text("RTI— Excellence in Data & AI Training", w / 2, 42, { align: "center" });
 
     // Certificate title
     doc.setFont("helvetica", "bold");

@@ -60,7 +60,7 @@ const Index = () => {
                 <Button className="mt-4 hover:scale-105 transition-transform shadow-lg shadow-primary/20 bg-primary text-primary-foreground">Learn More About RDTI</Button>
               </Link>
             </div>
-            <div className="flex-1 grid grid-cols-2 gap-4">
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-4 mt-8">
                 <div className="bg-muted p-6 rounded-2xl border-t-4 border-primary shadow-sm hover:-translate-y-2 transition-transform duration-300">
                   <Zap className="h-8 w-8 text-primary mb-3" />
@@ -89,7 +89,7 @@ const Index = () => {
       {/* SUCCESS METRICS */}
       <section className="bg-primary/5 py-16 border-y border-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-primary/20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center divide-x divide-primary/20">
             {[
               { label: 'Learners Trained', value: '500+' },
               { label: 'Completion Rate', value: '95%' },
@@ -194,7 +194,7 @@ const Index = () => {
 
       {/* CTA SECTION */}
       <section className="bg-muted py-20 px-4">
-        <div className="max-w-6xl mx-auto cta-gradient rounded-3xl p-12 md:p-20 text-center text-white shadow-2xl relative overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(249,115,22,0.4)] transition-shadow duration-500">
+        <div className="max-w-6xl mx-auto cta-gradient rounded-3xl p-8 sm:p-12 md:p-20 text-center text-white shadow-2xl relative overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(249,115,22,0.4)] transition-shadow duration-500">
           <div className="absolute top-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-slate-900 opacity-10 rounded-full translate-x-1/3 translate-y-1/3 animate-pulse"></div>
 

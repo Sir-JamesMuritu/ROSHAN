@@ -25,7 +25,7 @@ const StudentLayout = () => {
             <div className="flex items-center">
               <SidebarTrigger className="mr-4" />
               <h1 className="text-xl font-bold text-primary hidden md:block">Student Portal</h1>
-              <span className="md:hidden font-bold text-foreground">RDTI Student</span>
+              <span className="md:hidden font-bold text-foreground">RTIStudent</span>
             </div>
 
             <div className="flex items-center gap-4 relative">
@@ -55,8 +55,8 @@ const StudentLayout = () => {
                     <p className="text-xs text-muted-foreground truncate">{profile?.id ? "student@rdti.com" : "student"}</p>
                   </div>
                   <DropdownMenuSeparator className="bg-slate-100" />
-                  <DropdownMenuItem 
-                    onClick={() => signOut()} 
+                  <DropdownMenuItem
+                    onClick={() => signOut()}
                     className="cursor-pointer text-red-600 focus:bg-red-50 focus:text-red-700 transition-colors py-2"
                   >
                     <LogOut className="h-4 w-4 mr-2" /> Sign Out
@@ -65,7 +65,7 @@ const StudentLayout = () => {
               </DropdownMenu>
             </div>
           </header>
-          <main className="flex-1 overflow-auto bg-background p-6">
+          <main className="flex-1 overflow-auto bg-background p-4 md:p-6">
             <Outlet />
           </main>
         </div>

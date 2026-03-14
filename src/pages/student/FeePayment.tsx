@@ -265,7 +265,7 @@ const FeePayment = () => {
     doc.setFontSize(8);
     doc.setTextColor(150, 150, 150);
     doc.text("This is an electronically generated receipt and does not require a signature.", 105, 268, { align: "center" });
-    doc.text("RDTI — Rwanda Data and Technology Institute", 105, 274, { align: "center" });
+    doc.text("RTI— Rwanda Data and Technology Institute", 105, 274, { align: "center" });
 
     doc.save(`RDTI-Receipt-${payment.id.slice(0, 8).toUpperCase()}.pdf`);
   };

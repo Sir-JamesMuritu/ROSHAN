@@ -55,7 +55,7 @@ const Programs = () => {
       <IntakeBanner />
       <Navbar />
 
-      <div className="hero-bg py-20 mb-12">
+      <div className="hero-bg py-10 mb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-in fade-in duration-700">
           <h1 className="text-4xl font-bold text-white mb-4">Our Programs</h1>
           <p className="text-xl text-secondary max-w-2xl mx-auto font-light">
