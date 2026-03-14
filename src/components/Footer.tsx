@@ -32,7 +32,7 @@ const Footer = () => {
                   className="h-6 w-6 object-contain"
                 />
               </div>
-              <span className="font-bold text-xl text-white tracking-tight">RDTI</span>
+              <span className="font-bold text-xl text-white tracking-tight">RTI</span>
             </div>
             <p className="text-sm text-slate-400 mb-6 leading-relaxed">
               Empowering learners with practical data analysis and AI skills through quality training, mentorship, and real-world applications.

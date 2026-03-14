@@ -69,7 +69,7 @@ const Login = () => {
             />
             <div>
               <h1 className="mb-3 font-display text-3xl font-bold text-primary-foreground">
-                Welcome Back to RDTI
+                Welcome Back to RTI
               </h1>
               <p className="text-secondary/90 font-medium">
                 Continue your learning journey in data analytics, AI, and programming.
@@ -89,7 +89,7 @@ const Login = () => {
               <Link to="/" className="inline-block">
                 <img
                   src={fullLogoImage}
-                  alt="RDTI Logo"
+                  alt="RTILogo"
                   className="h-10 w-auto mx-auto object-contain"
                 />
               </Link>

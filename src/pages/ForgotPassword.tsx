@@ -40,7 +40,7 @@ const ForgotPassword = () => {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
               <GraduationCap className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="font-display text-lg font-bold text-foreground">RDTI</span>
+            <span className="font-display text-lg font-bold text-foreground">RTI</span>
           </Link>
           <h2 className="font-display text-2xl font-bold text-foreground">Forgot Password</h2>
           <p className="mt-1 text-sm text-muted-foreground">

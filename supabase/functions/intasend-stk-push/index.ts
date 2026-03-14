@@ -93,7 +93,7 @@ Deno.serve(async (req) => {
       amount: amount,
       phone_number: formattedPhone,
       api_ref: `payment_${enrollment_id}_${Date.now()}`,
-      narrative: narrative || 'Fee Payment - RDTI',
+      narrative: narrative || 'Fee Payment - RTI',
     };
 
     console.log('Initiating STK Push:', { phone: formattedPhone, amount, enrollment_id });

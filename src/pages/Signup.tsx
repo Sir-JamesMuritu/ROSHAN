@@ -101,7 +101,7 @@ const Signup = () => {
               <Link to="/" className="inline-block">
                 <img
                   src={fullLogoImage}
-                  alt="RDTI Logo"
+                  alt="RTILogo"
                   className="h-10 w-auto mx-auto object-contain"
                 />
               </Link>
@@ -110,7 +110,7 @@ const Signup = () => {
             <div>
               <h2 className="font-display text-2xl font-bold text-foreground">Create Account</h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Sign up to start learning with RDTI
+                Sign up to start learning with RTI
               </p>
             </div>
 

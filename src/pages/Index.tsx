@@ -54,10 +54,10 @@ const Index = () => {
               <div className="w-16 h-1 bg-secondary rounded-full"></div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">We Bridge the Data Skills Gap</h2>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                At Roshan Training Institute (RDTI), we move beyond theory. Our curriculum is designed by industry experts to ensure you gain hands-on experience with real datasets.
+                At Roshan Training Institute (RTI), we move beyond theory. Our curriculum is designed by industry experts to ensure you gain hands-on experience with real datasets.
               </p>
               <Link to="/about">
-                <Button className="mt-4 hover:scale-105 transition-transform shadow-lg shadow-primary/20 bg-primary text-primary-foreground">Learn More About RDTI</Button>
+                <Button className="mt-4 hover:scale-105 transition-transform shadow-lg shadow-primary/20 bg-primary text-primary-foreground">Learn More About RTI</Button>
               </Link>
             </div>
             <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -154,7 +154,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-3xl font-bold mb-8">Why Students Choose RDTI</h2>
+              <h2 className="text-3xl font-bold mb-8">Why Students Choose RTI</h2>
               <div className="space-y-6">
                 {[
                   { title: 'Project-based Learning', desc: 'Work with real datasets from day one.' },

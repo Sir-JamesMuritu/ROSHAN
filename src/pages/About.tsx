@@ -20,7 +20,7 @@ const About = () => {
       <div className="pb-20">
         {/* Page Header */}
         <div className="hero-bg py-10 text-center text-white mb-20">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">About RDTI</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">About RTI</h1>
           <p className="text-xl text-primary-foreground/90 font-light">Bridging the Gap • Driving Innovation</p>
         </div>
 

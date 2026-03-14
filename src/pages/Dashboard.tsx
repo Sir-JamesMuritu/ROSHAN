@@ -87,7 +87,7 @@ const Dashboard = () => {
             <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
               <GraduationCap className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className="font-display text-lg font-bold text-foreground">RDTI</span>
+            <span className="font-display text-lg font-bold text-foreground">RTI</span>
           </Link>
 
           <DropdownMenu>
@@ -216,10 +216,10 @@ const Dashboard = () => {
                     {enrolledProgramIds.has(program.id)
                       ? "Already Enrolled"
                       : program.status === "ended"
-                      ? "Ended"
-                      : program.status === "coming_soon"
-                      ? "Notify Me"
-                      : "Enroll Now"}
+                        ? "Ended"
+                        : program.status === "coming_soon"
+                          ? "Notify Me"
+                          : "Enroll Now"}
                   </Button>
                 </CardContent>
               </Card>

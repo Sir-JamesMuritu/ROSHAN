@@ -124,7 +124,7 @@ const FeePayment = () => {
           phone_number: data.phone_number,
           amount: Number(data.amount),
           enrollment_id: data.enrollment_id,
-          narrative: "Fee Payment - RDTI",
+          narrative: "Fee Payment - RTI",
         },
       });
 
@@ -193,7 +193,7 @@ const FeePayment = () => {
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(22);
     doc.setFont("helvetica", "bold");
-    doc.text("RDTI", 20, 22);
+    doc.text("RTI", 20, 22);
     doc.setFontSize(10);
     doc.setFont("helvetica", "normal");
     doc.text("Rwanda Data and Technology Institute", 20, 30);
@@ -267,7 +267,7 @@ const FeePayment = () => {
     doc.text("This is an electronically generated receipt and does not require a signature.", 105, 268, { align: "center" });
     doc.text("RTI— Rwanda Data and Technology Institute", 105, 274, { align: "center" });
 
-    doc.save(`RDTI-Receipt-${payment.id.slice(0, 8).toUpperCase()}.pdf`);
+    doc.save(`RTI-Receipt-${payment.id.slice(0, 8).toUpperCase()}.pdf`);
   };
 
   return (

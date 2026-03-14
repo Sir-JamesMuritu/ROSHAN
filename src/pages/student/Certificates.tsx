@@ -48,7 +48,7 @@ const Certificates = () => {
   const generateCertNumber = () => {
     const year = new Date().getFullYear();
     const rand = Math.floor(1000 + Math.random() * 9000);
-    return `RDTI-${year}-${rand}`;
+    return `RTI-${year}-${rand}`;
   };
 
   const generatePDF = (
@@ -193,7 +193,7 @@ const Certificates = () => {
 
       // Generate and download PDF
       const doc = generatePDF(studentName, studentId, programTitle, certNumber, issuedAt);
-      doc.save(`RDTI-Certificate-${programTitle.replace(/\s+/g, "-")}.pdf`);
+      doc.save(`RTI-Certificate-${programTitle.replace(/\s+/g, "-")}.pdf`);
 
       queryClient.invalidateQueries({ queryKey: ["student-certificates"] });
       toast({ title: "Certificate generated!", description: `Certificate #${certNumber}` });
@@ -209,7 +209,7 @@ const Certificates = () => {
     const studentName = profile?.full_name || "Student";
     const studentId = profile?.student_id || "N/A";
     const doc = generatePDF(studentName, studentId, programTitle, cert.certificate_number, new Date(cert.issued_at));
-    doc.save(`RDTI-Certificate-${programTitle.replace(/\s+/g, "-")}.pdf`);
+    doc.save(`RTI-Certificate-${programTitle.replace(/\s+/g, "-")}.pdf`);
   };
 
   const issuedMap = new Map(issuedCerts.map((c: any) => [c.enrollment_id, c]));
