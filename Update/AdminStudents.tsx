@@ -191,9 +191,9 @@ const AdminStudents = () => {
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+      <div className="flex items-center justify-between mb-6">
         <h1 className="font-display text-2xl font-bold text-foreground">Student Enrollment Overview</h1>
-        <Button onClick={downloadCSV} variant="outline" className="gap-2 w-full sm:w-auto">
+        <Button onClick={downloadCSV} variant="outline" className="gap-2">
           <Download className="h-4 w-4" />
           Download CSV
         </Button>
@@ -224,7 +224,6 @@ const AdminStudents = () => {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Card>
           <CardContent className="p-0">
-            <div className="overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -387,7 +386,6 @@ const AdminStudents = () => {
                 )}
               </TableBody>
             </Table>
-            </div>
           </CardContent>
         </Card>
       </motion.div>

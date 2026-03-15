@@ -162,6 +162,7 @@ const AdminPrograms = () => {
       <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
         <Card>
           <CardContent className="p-0">
+            <div className="overflow-x-auto">
             <Table>
               <TableHeader>
                 <TableRow>
@@ -204,6 +205,7 @@ const AdminPrograms = () => {
                 )}
               </TableBody>
             </Table>
+            </div>
           </CardContent>
         </Card>
       </motion.div>

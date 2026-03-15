@@ -167,7 +167,7 @@ const AdminFinancials = () => {
 
   return (
     <div>
-      <div className="mb-6 flex items-center justify-between">
+      <div className="mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <h1 className="font-display text-2xl font-bold text-foreground">Financials</h1>
         <div className="flex gap-2">
           <Dialog open={paymentOpen} onOpenChange={setPaymentOpen}>
@@ -279,6 +279,7 @@ const AdminFinancials = () => {
             {studentList.length === 0 ? (
               <p className="text-muted-foreground py-8 text-center">No enrolled students yet.</p>
             ) : (
+              <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -312,6 +313,7 @@ const AdminFinancials = () => {
                   })}
                 </TableBody>
               </Table>
+              </div>
             )}
           </CardContent>
         </Card>
@@ -329,6 +331,7 @@ const AdminFinancials = () => {
             {payments.length === 0 ? (
               <p className="text-muted-foreground py-8 text-center">No payments recorded yet.</p>
             ) : (
+              <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -353,6 +356,7 @@ const AdminFinancials = () => {
                   ))}
                 </TableBody>
               </Table>
+              </div>
             )}
           </CardContent>
         </Card>

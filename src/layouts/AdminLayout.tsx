@@ -18,10 +18,10 @@ const AdminLayout = () => {
 
   return (
     <SidebarProvider>
-      <div className="min-h-screen flex w-full">
+      <div className="h-screen flex w-full overflow-hidden">
         <AdminSidebar />
-        <div className="flex-1 flex flex-col">
-          <header className="h-16 bg-white border-b border-border flex items-center justify-between px-4 md:px-8 shadow-sm z-10 w-full">
+        <div className="flex-1 flex flex-col h-screen overflow-hidden">
+          <header className="h-16 bg-white border-b border-border flex items-center justify-between px-4 md:px-8 shadow-sm z-10 w-full shrink-0">
             <div className="flex items-center">
               <SidebarTrigger className="mr-4" />
               <h1 className="text-xl font-bold text-primary hidden md:block">Admin Panel</h1>
